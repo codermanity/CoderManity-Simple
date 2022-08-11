@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('background.jpg');
+
+}
+
+nav{
+    width: 100%; height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+	/* logo heartBeat animation timing */
+	animation: heartBeat 10s infinite;
+    /* background: red; */
+}
+
+nav .menu{
+    width: 40%;
+    /*background: yellow; */
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight:  bold;
+}
+
+nav .menu a:first-child{
+    color: white;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+section h3{
+    font-size: 35px; font-weight: 200; letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    /* text-transform: uppercase; */
+}
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section .btnone{
+    /* background: #00b894; */
+    background: #00b894;
+    color: white;
+}
+
+section .btntwo{
+    background: #fff;
+    color: black;
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 8s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    25%{content:" Coder";}
+    40%{content:" Programmer";}
+    65%{content:" Youtuber";}
+    75%{content:" Web Developer";}
+}
+
+.change_content2:after{
+    content: 'Humanity';
+    animation: changetext2 3s infinite linear;
+    color: #ffa500;
+}
+
+@keyframes changetext2{
+    25%{content:" World";}
+    40%{content:" Future";}
+    65%{content:" Grow";}
+    75%{content:" Humanity";}
+}
+
+.change_content3:after{
+    content: 'Udaykishor';
+    animation: changetext3 8s infinite linear;
+    color: #FFFDD0;
+	/* color: #FF6F61; */
+}
+
+@keyframes changetext3{
+    25%{content:" Savita";}
+    40%{content:" Udaykishor";}
+    65%{content:" Savita";}
+    75%{content:" Udaykishor";}
+}
+
+.change_content4:after{
+    content: 'Web Developer';
+    animation: changetext4 8s infinite linear;
+    color: red;
+	/* color: #FF6F61; */
+}
+
+@keyframes changetext4{
+    35%{content:" UI Developer";}
+    70%{content:" Software Developer";}
+}
+
+a:hover {
+  /* background-color: transparent; */
+    opacity: 0.3;
+}
+
